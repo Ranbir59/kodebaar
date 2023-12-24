@@ -47,3 +47,21 @@ export const services = [
   },
   
 ];
+
+export const projects=[
+  {
+    name:"Skeep",
+    image:"/assets/images/skeep.png",
+    link:"https://www.skeep.io/"
+  },
+  {
+    name:"Notarize Genie",
+    image:"/assets/images/genie.png",
+    link:"https://www.notarizegenie.com/"
+  },
+  {
+    name:"Search For Trademark",
+    image:"/assets/images/trademark.png",
+    link:"https://www.searchfortrademark.com/"
+  },
+]

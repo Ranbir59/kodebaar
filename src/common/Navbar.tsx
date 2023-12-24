@@ -26,7 +26,7 @@ const Navbar = () => {
         <a href="#home">
           <Image
             src="/assets/icons/logo.png"
-            className="object-cover w-[100%] h-auto"
+            className="object-cover  h-auto"
             width={100}
             alt="logo img"
             height={100}
@@ -63,11 +63,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="sidebar-container bg-black px-2  h-auto flex justify-between items-center fixed w-full top-0 z-10  min-[900px]:hidden">
+      <div className="sidebar-container bg-black px-2 py-4  h-auto flex justify-between items-center fixed w-full top-0 z-10  min-[900px]:hidden">
         <a href="#home">
           <Image
             src="/assets/icons/logo.png"
-            className="object-cover w-full h-auto"
+            className="object-cover  h-auto"
             width={100}
             alt="logo img"
             height={100}
