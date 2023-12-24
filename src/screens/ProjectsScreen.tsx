@@ -15,7 +15,6 @@ const ProjectsScreen = () => {
 
           <div className="projects-container">
             <div className="project-card bg-red-700 w-10 h-5transition-all duration-1000 ease-in-out hover:w-[50%] hover:h-[40px] ">
-              <p>project one</p>
             </div>
           </div>
         </div>
