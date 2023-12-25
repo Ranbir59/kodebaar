@@ -16,7 +16,7 @@ const ProjectsScreen = () => {
     <>
       <MarginWrapper>
         <div className="project-wrapper  py-10  h-[100vh]" id="projects">
-          <p className="text-white text-center min-[900px]:text-[50px] text-[30px] uppercase font-medium">
+          <p className="text-white text-center min-[900px]:text-[50px] text-[30px] uppercase font-medium oswald">
             Our Projects
           </p>
           {/* <Carousel className="w-full my-5">

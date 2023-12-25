@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar-wrapper max-[900px]:hidden ${
+        className={`navbar-wrapper max-[900px]:hidden z-10 ${
           scrollPosition > 50 ? "bg-black" : "bg-transparent border-b-black border-b-1"
         }  px-10 h-auto py-5 fixed top-0 w-[100%] transition-all duration-500 ease-in-out  flex justify-between items-center`}
       >
