@@ -19,7 +19,7 @@ const ProjectsScreen = () => {
           <p className="text-white text-center min-[900px]:text-[50px] text-[30px] uppercase font-medium">
             Our Projects
           </p>
-          <Carousel className="w-full my-5">
+          {/* <Carousel className="w-full my-5">
             <CarouselContent className="cursor-pointer">
               {projects.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
@@ -49,7 +49,7 @@ const ProjectsScreen = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-          </Carousel>
+          </Carousel> */}
           <div className="projects-container"></div>
         </div>
       </MarginWrapper>
