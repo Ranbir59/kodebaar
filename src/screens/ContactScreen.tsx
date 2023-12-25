@@ -27,9 +27,9 @@ const ContactScreen = () => {
 
                 <input type="email" name="email" placeholder="Email" />
 
-                <textarea rows={4} cols={50} name="comment" form="usrform">
-                  Enter text here...
-                </textarea>
+                <button className=" w-[15%] p-2 flex justify-center text-white text-left border-2 border-white hover:bg-white hover:text-black uppercase transition-all duration-500 ease-in-out">
+                  Submit
+                </button>
                 <br />
               </form>
             </div>
