@@ -8,7 +8,7 @@ const ContactScreen = () => {
     <>
       <MarginWrapper>
         <div
-          className={`h-auto  bg-red-600 ${oswald} `}
+          className={`   ${oswald} `}
           style={{
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left",
@@ -17,23 +17,41 @@ const ContactScreen = () => {
           id="contact"
         >
           <div className="contact-container min-[900px]:flex gap-5">
-            <div className={`first-div w-[60%]  ${playFair}`}>
+            <div className={`first-div min-[900px]:w-[60%]  ${playFair}`}>
               <p className=" text-white text-[50px] ">How Can We</p>
               <p className=" text-white text-[50px] ">help you?</p>
 
               <form action="" className="flex flex-col gap-5">
-                <input type="text" name="name" placeholder="First Name" />
-                <input type="text" name="name" placeholder="Last Name" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="First Name"
+                  autoComplete="off"
+                  className="bg-black focus:outline-none active:bg-black text-white my-5 placeholder:text-white tect-[30px] border-b-2 border-white py-5 px-3"
+                />
+                <input
+                  type="text"
+                  autoComplete="off"
+                  name="name"
+                  placeholder="Last Name"
+                  className="bg-black focus:outline-none text-white my-5 placeholder:text-white tect-[30px] border-b-2 border-white py-5 px-3"
+                />
 
-                <input type="email" name="email" placeholder="Email" />
+                <input
+                  type="email"
+                  name="email"
+                  autoComplete="off"
+                  placeholder="Email"
+                  className="bg-black focus:outline-none text-white my-5 placeholder:text-white tect-[30px] border-b-2 border-white py-5 px-3"
+                />
 
-                <button className=" w-[15%] p-2 flex justify-center text-white text-left border-2 border-white hover:bg-white hover:text-black uppercase transition-all duration-500 ease-in-out">
+                <button className=" min-[900px]:w-[15%] p-2 flex justify-center text-white text-left border-2 border-white hover:bg-white hover:text-black uppercase transition-all duration-500 ease-in-out">
                   Submit
                 </button>
                 <br />
               </form>
             </div>
-            <div className="second-div w-[40%] bg-white rounded-lg h-[80vh] flex flex-col items-center justify-center  ">
+            <div className="second-div min-[900px]:w-[40%] bg-white rounded-lg h-[80vh] flex flex-col items-center justify-center  ">
               <p className="text-[20px] font-semibold my-2 no-underline">
                 Talk to Us
               </p>
