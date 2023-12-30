@@ -2,15 +2,15 @@ import { LuPencil } from "react-icons/lu";
 export const navbar = [
   {
     name: "Home",
-    href: "#home",
+    href: "home",
   },
   {
     name: "Services  ",
-    href: "#services",
+    href: "services",
   },
   {
     name: "Our Projects",
-    href: "#projects",
+    href: "projects",
   },
 ];
 

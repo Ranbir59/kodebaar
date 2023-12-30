@@ -16,14 +16,25 @@ const Navbar = () => {
   const handleCloseSidebar = () => {
     setIsOpen(false);
   };
+
+  function scrollTo(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+
   return (
     <>
       <div
         className={`navbar-wrapper max-[900px]:hidden z-10 ${
-          scrollPosition > 50 ? "bg-black" : "bg-transparent border-b-black border-b-1"
+          scrollPosition > 50
+            ? "bg-black"
+            : "bg-transparent border-b-black border-b-1"
         }  px-10 h-auto py-5 fixed top-0 w-[100%] transition-all duration-500 ease-in-out  flex justify-between items-center`}
       >
-        <a href="#home">
+        <span onClick={() => scrollTo("home")}>
           <Image
             src="/assets/icons/logo.png"
             className="object-cover  h-auto"
@@ -31,12 +42,12 @@ const Navbar = () => {
             alt="logo img"
             height={100}
           />
-        </a>
+        </span>
         <div className=" gap-5 items-center min-[900px]:flex max-[900px]:hidden">
           <ul className="flex gap-5 font-semibold cursor-pointer ">
             {navbar?.map((item, idx) => (
               <div key={idx}>
-                <a href={item.href}>
+                <span onClick={() => scrollTo(item.href)}>
                   <li
                     className={`navbar-list-li ${
                       selectedTab === idx && "navbar-list-li-active"
@@ -47,11 +58,11 @@ const Navbar = () => {
                   >
                     {item.name}
                   </li>
-                </a>
+                </span>
               </div>
             ))}
           </ul>
-          <a href="#contact">
+          <span onClick={() => scrollTo("contact")}>
             <button
               className={`p-3 bg-black cursor-pointer rounded-2xl text-white font-semibold transition-all duration-300 ease-in-out border-2 ${
                 scrollPosition > 50 ? "border-white" : ""
@@ -59,7 +70,7 @@ const Navbar = () => {
             >
               Discuss A Project
             </button>
-          </a>
+          </span>
         </div>
       </div>
 
